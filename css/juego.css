@@ -1,0 +1,262 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url('../images/background1.jpg');
+  background-size: cover;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  padding: 5px 0;
+}
+
+li::before {
+  content: "• ";
+  color: #269dfc;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+
+.col-40 {
+  -webkit-box-shadow:0 0 10px white; 
+  -moz-box-shadow: 0 0 10px white; 
+  box-shadow:0 0 10px white;
+  background-image: url('../images/backinstrucciones.jpg');
+  background-size: cover;
+  padding: 20px;
+  color: #000;
+}
+
+.row {
+  margin-top: 10px;
+  vertical-align: top;
+  -webkit-box-shadow:0 0 10px white; 
+  -moz-box-shadow: 0 0 10px white; 
+  box-shadow:0 0 10px white;
+  background-image: url('../images/backniveles.jpg');
+  /* background-size: cover; */
+  color: #000;
+  height: 140px;
+}
+
+#seleccionNiveles {
+  float: left;
+  margin-left: 20px;
+}
+
+#seleccionNiveles li {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 5px #585151;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#seleccionNiveles ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+#seleccionNiveles h3 {
+  color: #269dfc;
+  text-shadow: 2px 2px 3px #585151;
+  font-size: 100%;
+  text-align: center;
+  padding: 2px;
+}
+
+
+#seleccionNiveles li {
+  padding: 2px 0;
+}
+
+#seleccionNiveles li::before {
+  content: "• ";
+  color: #269dfc;
+}
+
+#imagenesFondo img {
+  float: right;
+  height: 120px;
+  width: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#backjuego {
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+#juego {
+  background-color:rgba(0, 0, 0, 0.5);
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+#juego .pieza {
+  float: left;
+  width: 33.33%;
+  height: 33.33%;
+  background-size: 600px 600px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: auto;
+  padding: 1px;
+  background-image: url('../images/objetivo1.jpg');
+}
+
+#tituloRompecabezas h1 {
+  color: #29b6f6;
+  text-shadow: 2px 2px 5px #1a237e;
+  font-size: 240%;
+  text-align: center;
+  padding: 2px;
+  margin: 0px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+#tituloRobot h1 {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 5px #585151;
+  font-size: 240%;
+  text-align: center;
+  padding: 2px;
+  margin: 0px;
+  border-radius: 3px;
+}
+
+#vs {
+  background-image: url('../images/vsIcono.png');
+  background-size: cover;
+  margin: auto;
+  width: 125px;
+  height: 125px;
+}
+
+#instrucciones h2{
+  color:#e9e9e9;
+  text-shadow: 2px 2px 3px #585151;
+}
+
+#instrucciones li{
+  color: #269dfc;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
+}
+
+#resultado {
+  color:#5fcdff;
+  text-shadow: 2px 2px 3px #585151;
+  font-size: 40px;
+  text-align: center;
+}
+
+#resultado strong {
+  color: red;
+}
+
+#resultadoCadena {
+  color:red;
+  text-shadow: 2px 2px 3px #585151;
+  font-size: 40px;
+  text-align: center;
+}
+
+#mezclar {
+  margin-top: 20px;
+  color: white;
+  text-shadow: 2px 2px 3px #585151;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modificaciones {
+  margin-top: 10px;
+}
+
+#cantPiezas {
+  width: 40px;
+  margin-left: 10px;
+  font-size: 20px;
+  float: left;
+}
+
+#cantMov {
+  width: 60px;
+  margin-left: 10px;
+  font-size: 20px;
+  float: left;
+}
+
+.modificaciones h2{
+  color:#e9e9e9;
+  font-size: 12px;
+  float: left;
+  text-shadow: 2px 2px 3px #585151;
+}
+
+.modificaciones input[type="button"] {
+  clear: both;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.mensajeEmergente {
+  display: none;
+  max-width: 550px;
+  border-radius: 4px;
+
+  /* Transición */
+  transform: translateY(-50px);
+  transition: all .33s;
+}
+
+.fancybox-slide--current .mensajeEmergente {
+  transform: translateY(0);
+}
+
+.mensajeEmergente h2 {
+  text-align: center;
+}
+
+.mensajeEmergente h2 strong {
+  color: red;
+}
+
+.mensajeEmergente a {
+  cursor: pointer;
+}
+
+.mensajeEmergente img {
+  width: 100%;
+  height: 100%;
+}

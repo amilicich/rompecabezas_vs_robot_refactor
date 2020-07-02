@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RompeCabezas VS. Robot</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"> -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="col-40">
+      <div id="tituloRompecabezas">
+        <h1>Rompecabezas</h1>
+      </div>
+      <div id="tituloRobot">
+        <h1>Robot</h1>
+      </div>
+      <div id="instrucciones">
+        <h2>Instrucciones para Ganarle al Robot</h2>
+        <ul>
+          <li>Mover las piezas presionando las teclas de flechas.</li>
+          <li>Tenes que <strong>mezclar</strong> las fichas, tenés <span class="cantMovi"></span> movimientos</li>
+          <li>Si el Robot lo resuelve en <span class="cantMovi"></span> movimientos o más <strong>¡ganaste!</strong></li>
+        </ul>
+      </div>
+      <div id="resultado">👨 0 / <strong>0</strong> 🤖</div>
+      <div id="mezclar"><span id="mezclarBoton">Mezclar Piezas</span></div>
+      <div class="modificaciones" id="modGrilla"><h2>Cantidad de Piezas por Lado: </h2><input id="cantPiezas" type="number" min="2" value="0"></input><input id="okModiGrilla" type="button" value ="OK"></input></div>
+      <div class="modificaciones" id="modMovimientos"><h2>Cantidad de Movimientos: </h2><input id="cantMov" type="number" min="2" value="0"></input><input id="okModMovi" type="button" value ="OK"></input></div>
+    </div>
+
+    <div class="col-60">
+      <div id="backjuego">
+      </div>
+    </div>
+    <div class="row">
+      <div id="seleccionNiveles">
+        <h3>Selección de Niveles:</h3>
+        <ul>
+          <li>Fácil</li>
+          <li>Intermedio</li>
+          <li>Difícil</li>
+        </ul>
+      </div>
+      <div id="imagenesFondo">
+
+        <img src="images/objetivo1.jpg">
+        <img src="images/objetivo2.jpg">
+        <img src="images/objetivo3.jpg">
+        <img src="images/objetivo4.jpg">
+
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/juego.js"></script>
+  </body>
+</html>
